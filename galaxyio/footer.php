@@ -9,13 +9,8 @@
 
 							<div class="col-l">
 								<h6>Navigation</h6>
-								<ul>
-									<li><a href="/glance">产品简介</a></li>
-									<li><a href="#">解决方案</a></li>
-									<li><a href="#">资源</a></li>
-									<li><a href="#">技术支持</a></li>
-									<li><a href="#">公司简介</a></li>
-								</ul>
+                                                                 <?php wp_nav_menu(array('theme_location'=>'footer-menu-one',)); ?>
+								
 							</div>
 
 						</div>
@@ -24,19 +19,14 @@
 					<div class="span3">
 						<div class="fwidget">
 							<h6>Follow us</h6>
-							<ul>
-								<li><a href="#">@云仓科技</a></li>
-							</ul>
+							<?php wp_nav_menu(array('theme_location'=>'footer-menu-two',)); ?>
 						</div>
 					</div>
 
 					<div class="span3">
 						<div class="fwidget">
 							<h6>More</h6>
-							<ul>
-								<li><a href="#">申请试用</a></li>
-                                                                <li><a href="#">联系我们</a></li>
-							</ul>
+							<?php wp_nav_menu(array('theme_location'=>'footer-menu-three',)); ?>
 						</div>
 					</div>
 				</div>

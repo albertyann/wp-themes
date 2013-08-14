@@ -2,6 +2,9 @@
 
 register_nav_menus(array(
     'section-menu' => __('Section Menu', 'galaxyio'),
+    'footer-menu-one' => __('Footer Menu One', 'galaxyio'),
+    'footer-menu-two' => __('Footer Menu Two', 'galaxyio'),
+    'footer-menu-three' => __('Footer Menu Three', 'galaxyio'),
 ));
 add_theme_support('post-thumbnails');
 
