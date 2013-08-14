@@ -78,7 +78,7 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
          * then we got orphans, which should be displayed regardless
          */
         if (( $max_depth == 0 ) && count($children_elements) > 0) {
-            
+
             $empty_array = array();
             foreach ($children_elements as $orphans)
                 foreach ($orphans as $op)
@@ -93,14 +93,14 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
         if ($depth < 1) {
             $output .= "\n$indent<ul class=\"columns count5\" style=\"display:none;\">\n";
         } else {
-             $output .= "\n$indent<ul class=\" count5\">\n";
+            $output .= "\n$indent<ul class=\" count5\">\n";
         }
     }
 
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 
         global $wp_query;
-        $indent = "\n".( $depth ) ? str_repeat("\t", $depth) : '';
+        $indent = "\n" . ( $depth ) ? str_repeat("\t", $depth) : '';
 
         if (strcasecmp($item->title, 'divider')) {
             $class_names = $value = '';
@@ -109,10 +109,6 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
             $classes[] = 'ddmenu-item-' . $item->ID;
             $class_names = ( 0 == $depth) ? 'tab' : ''; //join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
-//            if ($args->has_children && 0 < $depth)
-//                $class_names .= ' dropdown-submenu';
-//            elseif ($args->has_children && 0 == $depth)
-//                $class_names .= ' dropdown';
 
             $class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
 
@@ -120,7 +116,7 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
             $id = $id ? ' id="' . esc_attr($id) . '"' : '';
 
             $output .= $indent . '<li' . $id . $value . $class_names . '>';
-            if ( $depth < 1 )
+            if ($depth < 1)
                 $output .= "\n<section role=\"group\">\n";
 
             $attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';

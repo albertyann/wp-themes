@@ -17,7 +17,7 @@ $(function() {
 			$(this).data("timeout", setTimeout($.proxy(function() {
 				$(this).parent().removeClass('hover');
 				$(this).children("ul").hide();
-			}, $(this)), 100000));
+			}, $(this)), 1000));
 		}
 	});
 });
