@@ -157,9 +157,9 @@ background:#1570a6;
     -webkit-box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
     -moz-box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
     box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
-    right: 0;
     padding: 0;
-    width: 7em;
+    width: 180px;
+    left: -25px;
 }
 #tabs .hover .columns{
     opacity: 1;
