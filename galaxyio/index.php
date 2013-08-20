@@ -34,11 +34,13 @@
 	<div class="content">
 		<div class="container">
 			<div class="row">
+                            <div class="span12">
 				<div class="why">Why GalaxyIO?</div>
 				<div class="row">
 
 				</div>
 				<hr>
+                            </div>
 			</div>
 			<div class="row">
 				<div class="span6">

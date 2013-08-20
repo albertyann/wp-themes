@@ -1,6 +1,8 @@
 
 	<footer>
 		<div class="container">
+                    
+                   
 			<div class="row">
 
 				<div class="widgets">
@@ -8,7 +10,7 @@
 						<div class="fwidget">
 
 							<div class="col-l">
-								<h6>Navigation</h6>
+								<h6>导航</h6>
                                                                  <?php wp_nav_menu(array('theme_location'=>'footer-menu-one',)); ?>
 								
 							</div>
@@ -18,14 +20,14 @@
 
 					<div class="span3">
 						<div class="fwidget">
-							<h6>Follow us</h6>
+							<h6>关注云仓</h6>
 							<?php wp_nav_menu(array('theme_location'=>'footer-menu-two',)); ?>
 						</div>
 					</div>
 
 					<div class="span3">
 						<div class="fwidget">
-							<h6>More</h6>
+							<h6>更多</h6>
 							<?php wp_nav_menu(array('theme_location'=>'footer-menu-three',)); ?>
 						</div>
 					</div>
@@ -37,11 +39,11 @@
 							Copyright ©
 							<a href="/">云仓科技</a>
 							-
-							<a href="/aboutus">About Us</a>
+							<a href="/aboutus">关于我们</a>
 							|
 							<a href="/faq">FAQ</a>
 							|
-							<a href="/contactus">Contact Us</a>
+							<a href="/contactus">联系我们</a>
 						</p>
 					</div>
 				</div>
