@@ -1,4 +1,5 @@
 
+<div style="clear:both"></div>
 <div class="container">
     <footer> 
 
@@ -40,8 +41,6 @@
                             <a href="/">云仓科技</a>
                             -
                             <a href="/aboutus">关于我们</a>
-                            |
-                            <a href="/faq">FAQ</a>
                             |
                             <a href="/contactus">联系我们</a>
                         </p>

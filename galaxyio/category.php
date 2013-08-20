@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div class="content blog">
-            <div class="container">
+            <div class="span12">
 		<?php while ( have_posts() ) : the_post(); ?>
                         <?php
                                 get_template_part('content', 'blog');

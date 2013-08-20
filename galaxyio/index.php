@@ -32,8 +32,6 @@
 	</div>
 
 	<div class="content">
-		<div class="container">
-			<div class="row">
                             <div class="span12">
 				<div class="why">Why GalaxyIO?</div>
 				<div class="row">
@@ -41,8 +39,7 @@
 				</div>
 				<hr>
                             </div>
-			</div>
-			<div class="row">
+			
 				<div class="span6">
 
 					<h4>Maecenas turpis urna</h4>
@@ -74,9 +71,8 @@
 					</p>
 
 					<hr></div>
-
-			</div>
-		</div>
+                   
+		
 
 	</div>
 <?php get_footer(); ?>

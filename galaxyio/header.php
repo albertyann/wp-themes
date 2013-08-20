@@ -24,28 +24,28 @@
 <body>
     <div class="wrapper">
 
-	<header>
-		<div class="container">
-                    <div class="span6">
-			<div class="logo">
-				<h1>
-                                    <a href="<?php echo home_url(); ?>">云仓科技</a>
-				</h1>
-			</div>
+        <header>
+            <div class="container">
+                <div class="span6 cl">
+                    <div class="logo">
+                        <h1>
+                            <a href="<?php echo home_url(); ?>">云仓科技</a>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="span5">
+                    <div class="form">
+                        <form method="get" id="searchform" action="#" class="form-search">
+                            <input type="text" value="" name="s" id="s" class="input-medium">
+                            <button type="submit" class="btn">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
             </div>
             
-            <div class="span5">
-                <div class="form">
-                  <form method="get" id="searchform" action="#" class="form-search">
-                    <input type="text" value="" name="s" id="s" class="input-medium">
-                    <button type="submit" class="btn">Search</button>
-                  </form>
-                </div>
-              </div>
-		</div>
-	</header>
-    
-        <div class="container">
+            <div class="primary-main">
                 <div class="navbar">
                         <div class="navbar-inner">
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -66,4 +66,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
+            </div>
+        </header>

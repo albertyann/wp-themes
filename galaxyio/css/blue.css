@@ -7,7 +7,7 @@ body{
 }
 .wrapper{
     background-color: #ffffff;
-    width:986px;
+    width:1200px;
     margin: 0 auto;
     -webkit-box-shadow: 0px 0px 40px #161616;
     -moz-box-shadow: 0px 0px 40px #161616;
@@ -32,9 +32,23 @@ blockquote{
 }
 
 header{
-	border-top: 2px solid #1570a6;
+        position: relative;
+        margin: 0 auto;
 }
-
+header .container{
+    border-bottom: 2px solid #1570a6;
+}
+.primary-main{
+    position: absolute;
+    right: 0;
+    top:45px;
+}
+.primary-main .navbar-inner{
+    box-shadow:none;
+    border:0;
+    border-radius:0;
+    background-color:transparent;
+}
 .navbar .btn{
 background:#1570a6 !important;  
 }
@@ -69,7 +83,7 @@ background:#11608f !important;
 }
 
 .full-slider{
-	border-top: 5px solid #11608f;
+	/*border-top: 5px solid #11608f;*/
 	background: #1570a6;
 }
 
@@ -210,13 +224,22 @@ background:#1570a6;
     display: block;
     height: 20px;
     padding: 10px;
+    text-align: center;
 }
+#tabs .tab section > a{
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+#tabs .tab section li a{
+    text-align: left;
+} 
 #tabs .tab section:hover{
     background-color: #f0f0f0;
 }
 #tabs .tab li{
     list-style: none;
     margin: 5px 10px;
+    text-align: left;
 }
 
 thead {
@@ -227,10 +250,6 @@ thead {
 .entry-content table thead td {
     background: #f2f2f2;
 }
-
-.span6 {
-    width: 480px;
-}
-.span12 {
-    width: 970px;
+.cl{
+    margin-left: 0;
 }
