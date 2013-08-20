@@ -1,6 +1,6 @@
 /* Blue */
 html{
-    background: url("../images/page-background.jpg") no-repeat center top #5377a5;
+    background-color: #5f5f5f;
 }
 body{
     background-color: transparent;
@@ -9,9 +9,11 @@ body{
     background-color: #ffffff;
     width:986px;
     margin: 0 auto;
-    -moz-box-shadow: 0px 0px 10px #333333;
-    -webkit-box-shadow: 0px 0px 10px #333333;
-    box-shadow: 0px 0px 10px #333333;
+    -webkit-box-shadow: 0px 0px 40px #161616;
+    -moz-box-shadow: 0px 0px 40px #161616;
+    -ms-box-shadow: 0px 0px 40px #161616;
+    -o-box-shadow: 0px 0px 40px #161616;
+    box-shadow: 0px 0px 40px #161616;
 }
 a{
 	color: #1570a6;
