@@ -203,6 +203,17 @@ background:#1570a6;
     list-style: none;
     margin: 5px 10px;
 }
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.entry-content table thead td {
+    background: #f2f2f2;
+}
+
+
 /*
 nav {
 	float: right;
