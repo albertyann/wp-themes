@@ -155,6 +155,7 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
         $cb_args = array_merge(array(&$output, $element, $depth), $args);
         call_user_func_array(array(&$this, 'start_el'), $cb_args);
         $id = $element->$id_field;
+
         // descend only when the depth is right and there are childrens for this element
         if (($max_depth == 0 || $max_depth > $depth + 1 ) && isset($children_elements[$id])) {
             foreach ($children_elements[$id] as $child) {
@@ -177,9 +178,9 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
         }
 
         //end this element
-        if ( $depth < 1 )
+        if ($depth < 1)
             $output .= '</section>';
-            
+
         $cb_args = array_merge(array(&$output, $element, $depth), $args);
         call_user_func_array(array(&$this, 'end_el'), $cb_args);
     }
@@ -339,6 +340,8 @@ if (!function_exists('advantage_content_class')) :
         }
         return $class;
     }
+
+
 
 
 
