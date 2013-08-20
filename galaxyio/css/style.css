@@ -1499,6 +1499,7 @@ ul.hover-block li img {
 
 .content{
 	margin-top: 20px;
+        min-height: 400px;
 }
 .content .row{
     padding-left: 10px;
