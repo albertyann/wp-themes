@@ -8,8 +8,10 @@
  */
 ?>
 
-<div class="span12">
-    <h3><?php the_title(); ?></h3>
+<!--   -->
+<div class="article-title">
+     <h3><?php the_title(); ?></h3>
+</div>
     <hr>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,4 +24,3 @@
             <?php //edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 
     </article><!-- #post-<?php the_ID(); ?> -->
-</div>

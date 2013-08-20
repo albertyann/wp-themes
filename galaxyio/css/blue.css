@@ -253,3 +253,12 @@ thead {
 .cl{
     margin-left: 0;
 }
+.article-title{
+    background: url(../images/ukjv.jpg) repeat-x;
+    height: 73px;
+    width: 100%;
+}
+.article-title h3{
+    line-height: 73px;
+    color: white;
+}
