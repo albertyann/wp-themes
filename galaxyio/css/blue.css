@@ -180,7 +180,7 @@ background:#1570a6;
     table-layout: fixed;
     opacity: 0;
     position: absolute;
-    top: 100%;
+    top: 40px;
     visibility: hidden;
     z-index: 1;
     -webkit-box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
@@ -188,7 +188,7 @@ background:#1570a6;
     box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
     padding: 0;
     width: 180px;
-    left: -26px;
+    right: 0px;
 }
 #tabs .hover .columns{
     opacity: 1;
@@ -261,4 +261,29 @@ thead {
 .article-title h3{
     line-height: 73px;
     color: white;
+}
+.pmenu{
+    border-left: 1px solid #DDDDDD;
+    padding-left: 20px;
+}
+
+.homepage h4{
+    color: #000;
+    font: 300 24px / 48px;
+    border-bottom: 1px solid #aaa;
+    width:450px;
+}
+.homepage dl{
+    height: 100px;
+    width:450px;
+}
+.homepage dt{
+    float: left;
+    margin: 10px;
+}
+.homepage dd{
+    font-size:14px;
+}
+#tabs  .count2{
+    width: 400px;
 }

@@ -10,7 +10,7 @@
 
                             <div class="col-l">
                                 <h6>导航</h6>
-                                <?php wp_nav_menu(array('theme_location' => 'footer-menu-one',)); ?>
+                                <?php wp_nav_menu(array('theme_location' => 'menu-one',)); ?>
 
                             </div>
 
@@ -20,14 +20,14 @@
                     <div class="span3">
                         <div class="fwidget">
                             <h6>关注云仓</h6>
-                            <?php wp_nav_menu(array('theme_location' => 'footer-menu-two',)); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
                         </div>
                     </div>
 
                     <div class="span3">
                         <div class="fwidget">
                             <h6>更多</h6>
-                            <?php wp_nav_menu(array('theme_location' => 'footer-menu-three',)); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
                         </div>
                     </div>
 

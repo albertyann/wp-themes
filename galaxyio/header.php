@@ -54,15 +54,47 @@
 
 				
 				<div class="nav-collapse collapse">
-                                    <?php  wp_nav_menu( array(
+                                    <?php /* wp_nav_menu( array(
                                             'container' => false,
                                             'menu_class' => 'nav',
                                             'menu_id'=>'tabs',
                                             'menu_class'=>'nav tabs',
                                             'walker' => new galaxyio_hover_walker()
-                                    ));
+                                    ));*/
                                     //echo get_template_part('menu'); 
+                                    
+                                    //wp_nav_menu(array('theme_location' => 'menu-one',));
                                     ?>
+                                    
+<ul id="tabs" class="nav tabs">
+	<li id="menu-item-4" class="tab">
+		<section role="group">
+			<a href="#" class="dropdown-toggle">产品信息</a>
+                        <div class="columns count5" style="display:none;">
+                            <?php wp_nav_menu(array('theme_location' => 'menu-one',)); ?>
+                        </div>
+		</section>
+	</li>
+	<li id="menu-item-14" class="tab">
+		<section role="group">
+			<a href="http://wp.yann/company" class="dropdown-toggle">解决方案</a>
+			<div class="columns count2" style="display:none;">
+                            <div class="col-l">
+                                <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
+                            </div>
+                            <div class="col-r">
+                                <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
+                            </div>
+			</div>
+		</section>
+	</li>
+	<li id="menu-item-35" class="tab">
+		<section role="group">
+			<a href="http://wp.yann/category/blog">公司信息</a>
+		</section>
+	</li>
+</ul>
+                                    
 				</div>
 			</div>
 		</div>

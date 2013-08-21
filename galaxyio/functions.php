@@ -2,9 +2,11 @@
 
 register_nav_menus(array(
     'section-menu' => __('Section Menu', 'galaxyio'),
-    'footer-menu-one' => __('Footer Menu One', 'galaxyio'),
-    'footer-menu-two' => __('Footer Menu Two', 'galaxyio'),
-    'footer-menu-three' => __('Footer Menu Three', 'galaxyio'),
+    'menu-one' => __('Menu One', 'galaxyio'),
+    'menu-two' => __('Menu Two', 'galaxyio'),
+    'menu-three' => __('Menu Three', 'galaxyio'),
+    'menu-four' => __('Menu Four', 'galaxyio'),
+    'product-menu' => __('Product Menu', 'galaxyio'),
 ));
 add_theme_support('post-thumbnails');
 

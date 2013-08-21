@@ -13,14 +13,20 @@
      <h3><?php the_title(); ?></h3>
 </div>
     <hr>
-
+<div class="span8">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
             <div class="entry-content">
+                
                     <?php the_content(); ?>
-                    <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+                    <?php //wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
+                
             </div><!-- .entry-content -->
 
             <?php //edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 
     </article><!-- #post-<?php the_ID(); ?> -->
+</div>
+    <div class="span3 pmenu">
+        <?php wp_nav_menu(array('theme_location' => 'product-menu',)); ?>
+    </div>

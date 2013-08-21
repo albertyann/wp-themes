@@ -11,12 +11,12 @@ $(function() {
 			$(this).parent().siblings("li.tab").removeClass('hover');
 			$(this).data("timeout", setTimeout($.proxy(function() {
 				$(this).parent().addClass('hover');
-				$(this).children("ul").show();
+				$(this).children("div").show();
 			}, $(this)), 100));
 		} else if (event.type == 'mouseleave') {
 			$(this).data("timeout", setTimeout($.proxy(function() {
 				$(this).parent().removeClass('hover');
-				$(this).children("ul").hide();
+				$(this).children("div").hide();
 			}, $(this)), 1000));
 		}
 	});
