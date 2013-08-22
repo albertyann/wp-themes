@@ -34,14 +34,14 @@
                     </div>
                 </div>
 
-                <div class="span5">
+                <!-- <div class="span5">
                     <div class="form">
                         <form method="get" id="searchform" action="#" class="form-search">
                             <input type="text" value="" name="s" id="s" class="input-medium">
                             <button type="submit" class="btn">Search</button>
                         </form>
                     </div>
-                </div>
+                </div>-->
                 
             </div>
             
@@ -69,7 +69,7 @@
 <ul id="tabs" class="nav tabs">
 	<li id="menu-item-4" class="tab">
 		<section role="group">
-			<a href="#" class="dropdown-toggle">产品信息</a>
+			<a href="#" class="dropdown-toggle">产品技术</a>
                         
                         <div class="columns count2" style="display:none;">
                             <div class="col-l">
@@ -91,7 +91,18 @@
 	</li>
 	<li id="menu-item-35" class="tab">
 		<section role="group">
-			<a href="http://wp.yann/category/blog">公司信息</a>
+			<a href="http://wp.yann/category/blog">关于我们</a>
+                        <div class="columns count5" style="display:none;">
+                            <?php wp_nav_menu(array('theme_location' => 'menu-four',)); ?>
+                        </div>
+		</section>
+	</li>
+        <li id="menu-item-35" class="tab">
+		<section role="group">
+			<a href="http://wp.yann/category/blog">更多信息</a>
+                        <div class="columns count5" style="display:none;">
+                            <?php wp_nav_menu(array('theme_location' => 'menu-five',)); ?>
+                        </div>
 		</section>
 	</li>
 </ul>

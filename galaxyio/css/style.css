@@ -1400,8 +1400,8 @@ i.linkedin{
 .flex-control-paging li a{
     background:#fff;
     box-shadow: none;
-    width: 8px;
-    height: 8px;
+    width: 14px;
+    height: 14px;
 }
 
 .flex-control-paging li a:hover{
@@ -1970,8 +1970,9 @@ footer ul{
     margin-left: 0px;
 }
 
-footer ul li{
-    padding: 5px 0px;
+footer ul li a{
+    display: block;
+    padding: 5px;
     border-bottom: 1px solid #DDDDDD;
 }
 

@@ -6,6 +6,7 @@ register_nav_menus(array(
     'menu-two' => __('Menu Two', 'galaxyio'),
     'menu-three' => __('Menu Three', 'galaxyio'),
     'menu-four' => __('Menu Four', 'galaxyio'),
+    'menu-five' => __('Menu Five', 'galaxyio'),
     'product-menu' => __('Product Menu', 'galaxyio'),
 ));
 add_theme_support('post-thumbnails');
