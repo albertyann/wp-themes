@@ -34,6 +34,7 @@ blockquote{
 header{
         position: relative;
         margin: 0 auto;
+        margin-bottom: 10px;
 }
 header .container{
     border-bottom: 2px solid #1570a6;
