@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>云仓存储</title>
+	<title><?php bloginfo( 'name' );?> | <?php bloginfo( 'description' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -29,8 +29,9 @@
                 <div class="span6 cl">
                     <div class="logo">
                         <h1>
-                            <a href="<?php echo home_url(); ?>">云仓科技</a>
+                            <a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' );?></a>
                         </h1>
+                        <span style="font-family: '宋体';font-size:12px;color:#555;"><?php bloginfo( 'description' ); ?></span>
                     </div>
                 </div>
 

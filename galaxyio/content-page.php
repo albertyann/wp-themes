@@ -10,7 +10,10 @@
 
 <!--   -->
 <div class="article-title">
-     <h3><?php the_title(); ?></h3>
+    <div class="sub-squares">
+        <h3><?php the_title(); ?></h3>
+    </div>
+     
 </div>
     <hr>
 <div class="span8">

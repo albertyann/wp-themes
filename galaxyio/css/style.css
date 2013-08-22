@@ -398,12 +398,12 @@ form input{
 
 /* Header */
 header .logo{
-    padding: 15px 0px;
+    padding: 15px 30px;
 }
 
 header .logo h1{
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 32px;
     margin-bottom: 5px;
     font-weight: bold !important;
 }
@@ -1398,7 +1398,7 @@ i.linkedin{
 }
 
 .flex-control-paging li a{
-    background:#fff;
+    background:rgba(255, 0, 0, 0.7);
     box-shadow: none;
     width: 14px;
     height: 14px;
@@ -1496,10 +1496,6 @@ ul.hover-block li img {
 .content{
     margin-top: 20px;
     min-height: 400px;
-    margin-left: -15px;
-}
-.content .row{
-    padding-left: 10px;
 }
 
 .content ul{

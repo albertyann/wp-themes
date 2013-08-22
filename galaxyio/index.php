@@ -53,15 +53,22 @@
 				</div>
 			</div>
 		</div>
+                    <div class="silder-wrap"></div>
 	</div>
 
 	<div class="content homepage">
-                            <div class="span12">
-				<div>产品和服务</div>
-				<hr>
-                            </div>
-			
+            <div class="row">
+                <div class="span12">
+                    <div class="wrap">
+                        <h6>产品和服务</h6>
+                    </div>
+                    <hr>
+                </div>
+	    </div>
+            <div class="row">
+                
 				<div class="span6 ">
+                                    <div class="wrap">
                                     <h4>企业私有云</h4>
                                     <dl>
                                         <dt>
@@ -80,9 +87,11 @@
                                             以4K和8K为代表的超高清视频媒体，在以前所未有的视听感受震撼着广大销售者的同时，也使媒体制作、创意工作者以及视听行业技术人员面临空前的数字媒体存储系统效能考验，云仓科技存储产品与超清视频解决方案将协助广大从业者从容面对这一挑战。
                                         </dd>
                                     </dl>
+                                    </div>
                                 </div>
 
 				<div class="span6">
+                                    <div class="wrap">
                                     <h4>大数据</h4>
                                     <dl>
                                         <dt>
@@ -101,9 +110,9 @@
                                             物联网将成为未来社会经济发展的支柱性产业，而实时归档和处理由连接到物联网的海量传感器所产生的巨量数据，将成为物联网建设与运维人员的首要任务，以云仓科技存储产品为基础的物联网数据归档和处理方案，帮助物联网企业和实施者跨越性能屏障，顺利达成项目目标。
                                         </dd>
                                     </dl>
-                                </div>
-                   
-		
+                                    </div>
+                       </div>
+		</div>
 
 	</div>
 <?php get_footer(); ?>
