@@ -13,6 +13,9 @@
                                 <?php wp_nav_menu(array('theme_location' => 'menu-one',)); ?>
 
                             </div>
+                            <div class="col-r">
+                                <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
+                            </div>
 
                         </div>
                     </div>
@@ -20,7 +23,7 @@
                     <div class="span3">
                         <div class="fwidget">
                             <h6>关注云仓</h6>
-                            <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
                         </div>
                     </div>
 
