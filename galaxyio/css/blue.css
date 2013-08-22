@@ -288,17 +288,44 @@ thead {
     width: 400px;
 }
 
-.sig-big-text{
-    background-color: #d74238;
-   
+.slides li{
+    position: relative;
+    text-align: center;
+}
+.slide-content-container{
+    /*background-color: #d74238;font-size: 24px;line-height: 40px;*/
     position: absolute;
-    top: 100px;
-    width: 400px;
-    height: 90px;
-    z-index: 999;
-    left: 4210px;
+    top: 0;    
+    width: 100%;
+}
+.slide-content{
+    background-color: #d74238;
+    opacity: 0.9;
+    height: 160px;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+}
+.slide-content p{
     font-size: 24px;
-    text-align: left;
     line-height: 40px;
-    padding:20px;
+    text-align: left;
+    padding: 20px;
+}
+.col-full{
+    max-width: 26em;
+}
+
+.slide-p1{
+     margin: 10em auto 0 49em;
+}
+.slide-p2{
+     margin: 10em auto 0 9em;
+}
+.slide-p3{
+     margin: 10em auto 0 9em;
+}
+.slide-p4{
+     margin: 10em auto 0 49em;
 }
