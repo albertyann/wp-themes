@@ -14,6 +14,7 @@
 
                             </div>
                             <div class="col-r">
+                                <h6>&nbsp;</h6>
                                 <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
                             </div>
 
@@ -23,14 +24,14 @@
                     <div class="span3">
                         <div class="fwidget">
                             <h6>关注云仓</h6>
-                            <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'menu-four',)); ?>
                         </div>
                     </div>
 
                     <div class="span3">
                         <div class="fwidget">
                             <h6>更多</h6>
-                            <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
+                            <?php wp_nav_menu(array('theme_location' => 'menu-five',)); ?>
                         </div>
                     </div>
 

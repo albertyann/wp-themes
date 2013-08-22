@@ -6,26 +6,50 @@
                     <div class="full-slider">
 			<div class="row">
 				<div class="span12">
-					<div class="flexslider">
-                                            <ul class="slides">
-                                                <li><img src="<?php bloginfo( 'template_url' ); ?>/assets/a.png" /></li>
-                                                <li><img src="<?php bloginfo( 'template_url' ); ?>/assets/b.png" /></li>
-                                                <li><img src="<?php bloginfo( 'template_url' ); ?>/assets/c.png" /></li>
+                                        <div class="flexslider">
+                                            <ul class="slides">                                                
                                                 <li>
-                                                        <div class="flex-caption flex-center">
-                                                                <h2>GalaxyIO</h2>
-                                                                <h6>
-                                                                    GalaxyIO HTSS高通量存储系统的核心是Hammer操作系统，它能自主识别多种典型应用负载模式，并在运行时自动进行系统参数调节和性能优化，以消除客户端应用的I/O访问响应抖动，优化后端系统资源使用，为用户和应用提供文件和块设备访问接口带宽、延迟与IOPS等方面的性能质量服务（QoS）保证。
-                                                                </h6>
-                                                                <div class="button">
-                                                                    <a href="/trial"> <i class="icon-circle-arrow-down"></i>
-                                                                        申请试用
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                    </li>
+                                                    <div class="flex-caption flex-center">
+                                                        <img src="http://galaxyio.com/test/wp-content/uploads/2013/08/movie-im.jpg" />                                            
+                                                        <div class="slide-content-container">
+                                                            <article class="slide-content col-full slide-p1">
+                                                                <p>流畅实现对4K无压缩3D超高清视频数据的加工处理</p>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex-caption flex-center">
+                                                        <img src="http://galaxyio.com/test/wp-content/uploads/2013/08/Secure-Access.png" />                                            
+                                                        <div class="slide-content-container">
+                                                            <article class="slide-content col-full slide-p2">
+                                                                <p>基于自主专利技术的安全存储软件，彻底杜绝数据泄露和失窃风险</p>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex-caption flex-center">
+                                                        <img src="http://galaxyio.com/test/wp-content/uploads/2013/08/cloud_im.jpg" />
+                                                        <div class="slide-content-container">
+                                                            <article class="slide-content col-full slide-p3">
+                                                                <p>深刻理解现代企业IT业务流程，为用户提供高效简易的数据存储与管理解决方案</p>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="flex-caption flex-center">
+                                                        <img src="http://galaxyio.com/test/wp-content/uploads/2013/08/smart_grid.jpg" />
+                                                        <div class="slide-content-container">
+                                                            <article class="slide-content col-full slide-p4">
+                                                                <p>高效的数据过滤与加载引擎，与领先的物联网数据处理平台完美协作</p>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
-					</div>
+                                        </div>
 				</div>
 			</div>
 		</div>

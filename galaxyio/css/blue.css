@@ -312,20 +312,26 @@ thead {
     line-height: 40px;
     text-align: left;
     padding: 20px;
+    opacity: 1;
 }
 .col-full{
     max-width: 26em;
 }
 
 .slide-p1{
+     background: rgba(204, 0, 0, 0.9);
      margin: 10em auto 0 49em;
+     
 }
 .slide-p2{
+     background: rgba(0, 0, 0, 0.4);
      margin: 10em auto 0 9em;
 }
 .slide-p3{
-     margin: 10em auto 0 9em;
+     margin: 10em auto 0 49em;
+     color:#000;
 }
 .slide-p4{
-     margin: 10em auto 0 49em;
+     margin: 15em auto 0 4em;
+     background: rgba(0, 102, 0, 0.9);    
 }
