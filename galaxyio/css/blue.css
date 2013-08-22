@@ -258,7 +258,7 @@ thead {
 }
 .article-title{
     /*background: url(../images/ukjv.jpg) repeat-x;*/
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod¡­BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
     background: -moz-linear-gradient(left, #142b58 52%, #1f6acc 73%, #277ced 91%, #1f6acc 100%);
     background: linear-gradient(to right, #142b58 52%, #1f6acc 73%, #277ced 91%, #1f6acc 100%);
     height: 70px;
