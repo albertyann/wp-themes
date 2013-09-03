@@ -17,7 +17,13 @@ $(function() {
 			$(this).data("timeout", setTimeout($.proxy(function() {
 				$(this).parent().removeClass('hover');
 				$(this).children("div").hide();
-			}, $(this)), 1000));
+			}, $(this)), 100));
 		}
 	});
+
+	$('div[dir="ltr"]').each(function(){
+		if($(this).html().length == 0){
+			$(this).html($(this).html() + '<br />');
+		}
+	})
 });

@@ -28,8 +28,5 @@
     <div class="title">
         <h5>产品技术</h5>
     </div>
-    <?php wp_nav_menu(array(
-        'theme_location' => 'product-menu',
-        'menu_class'=>'',
-    )); ?>
+    <?php wp_nav_menu(array('theme_location' => 'product-menu',)); ?>
 </div>

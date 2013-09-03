@@ -27,7 +27,7 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
 
         if ($max_depth < -1) //invalid parameter
             return $output;
-
+        
         if (empty($elements)) //nothing to walk
             return $output;
 
@@ -96,40 +96,32 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
 
     function start_lvl(&$output, $depth) {
         $indent = str_repeat("\t", $depth);
-        if ($depth < 1) {
-            $output .= "\n$indent<ul class=\"columns count5\" style=\"display:none;\">\n";
-        } else {
-            $output .= "\n$indent<ul class=\" count5\">\n";
-        }
+        $output .= "\n$indent<ul>\n";
+
     }
 
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 
-        global $wp_query;
         $indent = "\n" . ( $depth ) ? str_repeat("\t", $depth) : '';
 
         if (strcasecmp($item->title, 'divider')) {
             $class_names = $value = '';
             $classes = empty($item->classes) ? array() : (array) $item->classes;
-//			$classes[] = ($item->current && 0 == $depth) ? 'active' : '';
             $classes[] = 'ddmenu-item-' . $item->ID;
-            $class_names = ( 0 == $depth) ? 'tab' : ''; //join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
 
 
-            $class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
+            $class_names = '';//$class_names ? ' class="' . esc_attr($class_names) . '"' : '';
 
             $id = apply_filters('nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args);
             $id = $id ? ' id="' . esc_attr($id) . '"' : '';
 
             $output .= $indent . '<li' . $id . $value . $class_names . '>';
-            if ($depth < 1)
-                $output .= "\n<section role=\"group\">\n";
+            
 
             $attributes = !empty($item->attr_title) ? ' title="' . esc_attr($item->attr_title) . '"' : '';
             $attributes .=!empty($item->target) ? ' target="' . esc_attr($item->target) . '"' : '';
             $attributes .=!empty($item->xfn) ? ' rel="' . esc_attr($item->xfn) . '"' : '';
             $attributes .=!empty($item->url) ? ' href="' . esc_attr($item->url) . '"' : '';
-            $attributes .= ($args->has_children) ? ' class="dropdown-toggle"' : '';
 
             $item_output = $args->before;
             $item_output .= '<a' . $attributes . '>';
@@ -165,7 +157,6 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
             foreach ($children_elements[$id] as $child) {
                 if (!isset($newlevel)) {
                     $newlevel = true;
-                    //start the child delimiter
                     $cb_args = array_merge(array(&$output, $depth), $args);
                     call_user_func_array(array(&$this, 'start_lvl'), $cb_args);
                 }
@@ -180,10 +171,7 @@ class galaxyio_hover_walker extends Walker_Nav_Menu {
             $cb_args = array_merge(array(&$output, $depth), $args);
             call_user_func_array(array(&$this, 'end_lvl'), $cb_args);
         }
-
-        //end this element
-        if ($depth < 1)
-            $output .= '</section>';
+        
 
         $cb_args = array_merge(array(&$output, $element, $depth), $args);
         call_user_func_array(array(&$this, 'end_el'), $cb_args);

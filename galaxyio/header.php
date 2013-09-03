@@ -34,6 +34,7 @@
                         <span style="font-family: '宋体';font-size:12px;color:#555;"><?php bloginfo( 'description' ); ?></span>
                     </div>
                 </div>
+                <div class="lan"><a href="/galaxyio.html">English</a> <span>|</span> <a href="<?php echo home_url(); ?>" class="active">中文</a></div>
 
                 <!-- <div class="span5">
                     <div class="form">
@@ -49,65 +50,91 @@
             <div class="primary-main">
                 <div class="navbar">
                         <div class="navbar-inner">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span>Menu</span>
-				</a>
+				      <!--   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					       <span>Menu</span>
+				        </a> -->
 
 				
 				<div class="nav-collapse collapse">
-                                    <?php /*wp_nav_menu( array(
-                                            'container' => false,
-                                            'menu_class' => 'nav',
-                                            'menu_id'=>'tabs',
-                                            'menu_class'=>'nav tabs',
-                                            'walker' => new galaxyio_hover_walker()
-                                    ));*/
-                                    //echo get_template_part('menu'); 
                                     
-                                    //wp_nav_menu(array('theme_location' => 'menu-one',));
-                                    ?>
-                                    
-<ul id="tabs" class="nav tabs">
-	<li id="menu-item-4" class="tab">
-		<section role="group">
-			<a href="#" class="dropdown-toggle">产品技术</a>
-                        
-                        <div class="columns count2" style="display:none;">
-                            <div class="col-l">
-                                <?php wp_nav_menu(array('theme_location' => 'menu-one',)); ?>
-                            </div>
-                            <div class="col-r">
-                                <?php wp_nav_menu(array('theme_location' => 'menu-two',)); ?>
-                            </div>
-			</div>
-		</section>
-	</li>
-	<li id="menu-item-14" class="tab">
-		<section role="group">
-			<a href="http://wp.yann/company" class="dropdown-toggle">解决方案</a>
-			<div class="columns count5" style="display:none;">
-                            <?php wp_nav_menu(array('theme_location' => 'menu-three',)); ?>
-                        </div>
-		</section>
-	</li>
-	<li id="menu-item-35" class="tab">
-		<section role="group">
-			<a href="http://wp.yann/category/blog">关于我们</a>
-                        <div class="columns count5" style="display:none;">
-                            <?php wp_nav_menu(array('theme_location' => 'menu-four',)); ?>
-                        </div>
-		</section>
-	</li>
-        <li id="menu-item-35" class="tab">
-		<section role="group">
-			<a href="http://wp.yann/category/blog">更多信息</a>
-                        <div class="columns count5" style="display:none;">
-                            <?php wp_nav_menu(array('theme_location' => 'menu-five',)); ?>
-                        </div>
-		</section>
-	</li>
-</ul>
-                                    
+<div class="menu_content">
+    <!-- 在此处加个判断中英文链接的页面是否一样 -->
+    <ul class="menu">
+        <li><a href="<?php echo home_url(); ?>" class="home">首页</a></li>
+        <li><a href="javascript:void(0);" class="introduce">产品技术</a>
+            <div class="double">
+                <dl>
+                    <dt>
+                        存储设备
+                    </dt>
+                    <dd>
+                        <?php 
+                            wp_nav_menu( array(
+                                    'container' => false,
+                                    'menu_class'=>'',
+                                    'walker' => new galaxyio_hover_walker(),
+                                    'theme_location' => 'menu-one'
+                            ));
+                        ?>
+                    </dd>
+                </dl>
+                
+               <dl>
+                    <dt>
+                        数据存储与管理软件
+                    </dt>
+                    <dd> 
+                        <?php 
+                            wp_nav_menu( array(
+                                    'container' => false,
+                                    'menu_class'=>'',
+                                    'walker' => new galaxyio_hover_walker(),
+                                    'theme_location' => 'menu-two'
+                            ));
+                        ?>
+                    </dd>
+                </dl>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="news_active introduce">解决方案</a>
+            <div>
+                <?php 
+                    wp_nav_menu( array(
+                            'container' => false,
+                            'menu_class'=>'',
+                            'walker' => new galaxyio_hover_walker(),
+                            'theme_location' => 'menu-three'
+                    ));
+                ?>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="download introduce">关于我们</a>
+            <div>
+                <?php 
+                    wp_nav_menu( array(
+                        'container' => false,
+                        'menu_class'=>'',
+                        'walker' => new galaxyio_hover_walker(),
+                        'theme_location' => 'menu-four'
+                    ));
+                ?>
+            </div>
+        </li>
+        <li><a href="javascript:void(0);" class="about introduce">更多信息</a>
+            <div>
+                <?php 
+                    wp_nav_menu( array(
+                        'container' => false,
+                        'menu_class'=>'',
+                        'walker' => new galaxyio_hover_walker(),
+                        'theme_location' => 'menu-five'
+                    ));
+                ?>
+            </div>
+        </li>
+    </ul>
+</div>
+
 				</div>
 			</div>
 		</div>

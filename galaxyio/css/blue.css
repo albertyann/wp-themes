@@ -43,8 +43,8 @@ header .container{
 }
 .primary-main{
     position: absolute;
-    right: 0;
-    top:58px;
+    right: 60px;
+    top:8px;
 }
 .primary-main .navbar-inner{
     box-shadow:none;
@@ -173,17 +173,14 @@ background:#1570a6;
     background: #fff;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
-    border-top: 3px solid #6cace4;
-    border-bottom: 3px solid #6cace4;
-    border-left:1px solid #f0f0f0;
-    border-right:1px solid #f0f0f0;
+    border: 1px solid #c9cfd6;
     font-size: 12px;
     font-size: 1.2rem;
     display: block;
     table-layout: fixed;
     opacity: 0;
     position: absolute;
-    top: 40px;
+    top: 36px;
     visibility: hidden;
     z-index: 1;
     -webkit-box-shadow: 0 0.25em 0.25em rgba(91,103,112,0.7);
@@ -202,16 +199,16 @@ background:#1570a6;
     padding: 0;
 }
 #tabs .columns > li a{
-    font-weight: bold !important;
-    font-size: 14px !important;
+    font-weight: bold ;
+    font-size: 14px;
 }
 #tabs .columns ul li{
     margin: 0;
     padding-left: 10px;
 }
 #tabs .columns ul li a{
-    font-weight: normal !important;
-    font-size: 12px !important;
+    font-weight: normal;
+    font-size: 12px;
 }
 #tabs .tab {
     display: table-cell;
@@ -225,30 +222,41 @@ background:#1570a6;
 }
 #tabs .tab section{
     display: block;
-    height: 20px;
-    padding: 10px;
     text-align: center;
 }
 #tabs .tab section > a{
-    font-size: 16px !important;
-    font-weight: bold !important;
+    font-size: 16px ;
+    font-weight: bold;
+    display: block;
+    height: 36px;
+    width:103px;
+    line-height: 36px;
 }
 #tabs .tab section li a{
     text-align: left;
 } 
-#tabs .tab section:hover{
-    background-color: #f0f0f0;
+#tabs .tab section > a:hover{
+    background-color: #fff;
+    border:1px solid #c9cfd6;
+    z-index: 2;
+    position: absolute;
+    border-bottom: 0;
 }
+
 #tabs .tab li{
     list-style: none;
     margin: 5px 10px;
     text-align: left;
 }
 
+
 thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
+}
+.entry-content{
+    margin: 10px 30px;
 }
 .entry-content table thead td {
     background: #f2f2f2;
@@ -258,7 +266,7 @@ thead {
 }
 .article-title{
     /*background: url(../images/ukjv.jpg) repeat-x;*/
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodâ€¦BoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
     background: -moz-linear-gradient(left, #142b58 52%, #1f6acc 73%, #277ced 91%, #1f6acc 100%);
     background: linear-gradient(to right, #142b58 52%, #1f6acc 73%, #277ced 91%, #1f6acc 100%);
     height: 70px;
@@ -272,10 +280,6 @@ thead {
 .sub-squares {
     background: url(../images/sub-squares.png) right top no-repeat;
     height: 70px;
-}
-.pmenu{
-    border-left: 1px solid #DDDDDD;
-    padding-left: 20px;
 }
 
 .homepage h4{
@@ -353,7 +357,125 @@ thead {
      background: rgba(0, 102, 0, 0.9);    
 }
 
-.menu-product_menu-container{
+.pmenu{
     border-left: 1px solid #ccc;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+.pmenu .title h5{
+    color:#000;
+}
+.pmenu ul li ul{
+    padding-left:1em;
+}
+footer{
+    font-size:12px;
+}
+
+footer ul li ul li a{
+    padding-left:1em;
+}
+footer ul li ul li ul li a{
+    padding-left:2em;
+}
+
+
+
+
+
+
+
+.menu_content { float:right; display:block; }
+.menu_content ul { margin:0; padding-top:45px;}
+.menu_content ul li { font-size:16px; display:block; float:left; position:relative; z-index:7;}
+.menu_content ul li a { width:100px; margin:0 8px; padding:10px 0; display:block; text-align:center;}
+.menu_content ul li a.home { width:52px; margin:0 14px; display:block; text-align:center}
+.menu_content ul li a:hover { color:#28a7e1} 
+
+
+.menu{padding-left:15px; _overflow:hidden}
+.menu a{color:#333;height:16px;line-height:16px;position:relative}
+.menu a.introduce {background:#fff url(../images/cor_introduce_grey.png) no-repeat 88px 16px;}
+.menu li .introduce{font-size:16px;float:left; border:1px solid #fff;position:relative;padding:10px 0; z-index:9}
+
+.menu div{
+    background:#fff; 
+    border:1px solid #c9cfd6; 
+    box-shadow:0 1px 2px #ececec; 
+    border-radius:2px; 
+    position:absolute; 
+    top:-999em;
+    z-index:97; 
+    padding:0; 
+    display:block;
+}
+.menu div ul{
+    padding-top: 5px;
+}
+.menu div dl{
+    float:left;
+    margin: 0;
+    width: 180px;
+}
+.menu div dt{
+    padding-left: 1em;
+    font-size: 1em;
+}
+.menu dd{
+    margin: 0;
+}
+.menu ul li{padding: 0;}
+.menu ul{margin-left: 1em;}
+.menu ul ul{margin-left: 1em;}
+.menu ul ul ul{margin-left: 1em;}
+.menu ul li a{margin: 0;padding: 5px 0;text-align:left;}
+.menu li:hover .introduce{
+    z-index:99;
+    background:#fff url(../images/cor_introduce.png) no-repeat 88px 16px; 
+    border:1px solid #c9cfd6; 
+    box-shadow:0 -2px 2px #ececec; 
+    border-top-left-radius:2px; 
+    border-top-right-radius:2px; 
+    color:#28a7e1; 
+    border-bottom:none;
+    padding:11px 0;
+}
+.menu li div{
+    width:180px; 
+}
+.menu div.double {
+    width:360px; 
+}
+.menu li:hover div{top:38px; left:8px; display:block; z-index:98; padding:6px 0;}
+*+html .menu li:hover div{top:25px; left:14px; display:block; z-index:98; padding:0;}
+.menu li:hover ul li{font-size:12px;border:none; display:block; clear:both; padding: 0; }
+.menu li:hover ul li a{color:#333; text-decoration:none; display:block; 
+    clear:both;width:100%; font-size:14px;}
+.menu li:hover ul li a:hover{text-decoration:none; color:#749e16}
+.menu li a{
+    text-decoration: none;
+}
+/*IE6*/
+.menu li.hover{background-color:#fff;border:1px solid #629d2a;border-bottom:none;padding:8px 11px}
+.menu li.hover a{color:#357d13}
+.menu li.hover ul{top:31px;display:block}
+.menu li.hover ul li{border:none; display:block;  clear:both; padding:4px 0;}
+.menu li.hover ul li a{ height:16px;line-height:16px;font-size:12px;color:#333;text-decoration:none;padding:5px 0; margin:0; display:block; clear:both;}
+.menu li.hover ul li a:hover{text-decoration:underline}
+
+
+.drop{
+    clear: both;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+    font-size: 14px;
+    height: 250px;
+    color: #000;
+}
+.drop h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #5d9ac8;
+}
+.drop .pic_r{
+    float: right;
 }

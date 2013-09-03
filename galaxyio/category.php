@@ -9,13 +9,19 @@
 
 get_header(); ?>
 <div class="content blog">
-            <div class="span12">
-		<?php while ( have_posts() ) : the_post(); ?>
-                        <?php
-                                get_template_part('content', 'blog');
-                        ?>
-                <?php endwhile; ?>
-            </div>
+    <div class="row">
+        <div class="span12">
+            <?php while ( have_posts() ) : the_post(); ?>
+                    <?php
+                    $post_type = 'product';
+                    if (in_category('blog')) {
+                        $post_type = 'blog';
+                    }
+                            get_template_part('content', $post_type);
+                    ?>
+            <?php endwhile; ?>
+        </div>
+    </div>
 </div>
 
 
